@@ -24,15 +24,52 @@
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 class="display-4">Work Day Scheduler</h1>
+      <br>
+      
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <br>
+    
+      <p id="currentDay" class="lead">Today's Date:</p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+    <div class="container month h-25 d-inline-block">
+      <div class="row"></div>
+            
+      <div class="col-sm-9 bg-light text-primary">
+        <div class="week offset-md-3">
+        <div class="nineAM grid-cell border border-dark w-3 p-3 h-25 form-control width70 d-inline-block">9AM<input type="text" class="form-control input-group-btn d-inline-block nineTask"><button class="btn btn-info d-inline-block" id="save9">Save</button></div>
+        <br>
+        
+        <div class="tenAm grid-cell border border-dark w-3 p-3 h-25 ">10AM<button id="save10">Save</button></div>
+        <br>
+        
+        <div class="elevenAm grid-cell border border-dark w-3 p-3 h-25 ">11AM<button id="save11">Save</button></div>
+        <br>
+        
+        <div class="twelvePM grid-cell border border-dark w-3 p-3 h-25 ">12PM<button id="save12">Save</button></div>
+        <br>
+        
+        <div class="onePM grid-cell border border-dark w-3 p-3 h-25 ">1PM<button id="save1">Save</button></div>
+        <br>
+        
+        <div class="twoPM grid-cell border border-dark w-3 p-3 h-25 ">2PM<button id="save2">Save</button></div>
+        <br>
+        
+        <div class="threePM grid-cell border border-dark w-3 p-3 h-25 ">3PM<button id="save3">Save</button></div>  
+        <br>
+        
+        <div class="fourPM grid-cell border border-dark w-3 p-3 h-25 ">4PM<button id="save4">Save</button></div>
+        <br>
+        
+        <div class="fivePM grid-cell border border-dark w-3 p-3 h-25 ">5PM<button id="save5">Save</button></div> 
+      </div>
+      </div>
+     
+    
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="javascript.js"></script>
   </body>
 </html>
