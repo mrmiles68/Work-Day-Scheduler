@@ -2,26 +2,38 @@ var timeNow = moment().format("MMMM Do YYYY")
 document.getElementById("currentDay").innerHTML = timeNow;
 console.log(timeNow);
 
-var saveNine =""
-var saveTen =""
-var saveEleven =""
-var saveTwelve =""
-var saveOne =""
-var saveTwo =""
-var saveThree =""
-var saveFour =""
-var saveFive =""
-var dataSave = function(){
-    console.log("button 9 clicked")
-}
+var saveNine ="";
+var saveTen ="";
+var saveEleven ="";
+var saveTwelve ="";
+var saveOne ="";
+var saveTwo ="";
+var saveThree ="";
+var saveFour ="";
+var saveFive ="";
+var hardSaveNine =  "";
+var hardSaveTen =  "";
+var hardSaveEleven =  "";
+var hardSaveTwelve =  "";
+var hardSaveOne =  "";
+var hardSaveTwo =  "";
+var hardSaveThree =  "";
+var hardSaveFour =  "";
+var hardSaveFive =  "";
 
-$(document).ready(function() {
+var dataSave = function(){
+    console.log("button 9 clicked");
+};
+
+// $(document).ready(function() {
 $( "#save9" ).click(function() {
-        var saveNine = $("nineTask").val();
-        alert(saveNine);
-        localStorage.hardSaveNive = saveNine;
+        var saveNine = $("#nineTask").val();
+        alert(" New Variable: " + saveNine);
+        console.log(saveNine);
+        localStorage.hardSaveNine = saveNine;
+        alert(" Saved Variable: " + hardSaveNine);
   });
-});
+// });
    $( "#save10" ).click(function() {
     var saveTen = $("tenTask").val();
         alert(saveTen);
