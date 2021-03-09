@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- load stylesheets -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-10">Work Day Scheduler</h1>
+      <br>
+      
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <br>
+    
+      <p id="currentDay" class="lead">Today's Date:</p>
+    </header>
+    <div class="container">
+      <div class="row"></div>
+            
+      <div class="month">
+        <div class="week ">
+          <!-- create hourly fields -->
+        <div class="grid-cell border border-dark w-3 p-3 h-25 " id = "nineAm" style="display: flex; justify-content: space-between;"><span>9AM</span><input type="text" id="currentTaskNine"><button id="save9">Save</button></div>
+        <br>
+        
+        <div class=" grid-cell border border-dark w-3 p-3 h-25 " id = "tenAm" style="display: flex; justify-content: space-between;"><span>10AM</span><input type="text" id="currentTaskTen"><button id="save10">Save</button></div>
+        <br>
+        
+        <div class="grid-cell border border-dark w-3 p-3 h-25 " id = "elevenAm" style="display: flex; justify-content: space-between;"><span>11AM</span><input type="text" id="currentTaskEleven"><button id="save11">Save</button></div>
+        <br>
+        
+        <div class=" grid-cell border border-dark w-3 p-3 h-25 " id = "twelvePm" style="display: flex; justify-content: space-between;"><span>12PM</span><input type="text" id="currentTaskTwelve"><button id="save12">Save</button></div>
+        <br>
+        
+        <div class=" grid-cell border border-dark w-3 p-3 h-25 " id = "onePm" style="display: flex; justify-content: space-between;"><span>1PM</span><input type="text" id="currentTaskOne"><button id="save1">Save</button></div>
+        <br>
+        
+        <div class=" grid-cell border border-dark w-3 p-3 h-25 " id = "twoPm" style="display: flex; justify-content: space-between;"><span>2PM</span><input type="text" id="currentTaskTwo"><button id="save2">Save</button></div>
+        <br>
+        
+        <div class=" grid-cell border border-dark w-3 p-3 h-25 " id = "threePm" style="display: flex; justify-content: space-between;"><span>3PM</span><input type="text" id="currentTaskThree"><button id="save3">Save</button></div> 
+        <br>
+        
+        <div class="grid-cell border border-dark w-3 p-3 h-25 " id = "fourPm" style="display: flex; justify-content: space-between;"><span>4PM</span><input type="text" id="currentTaskFour"><button id="save4">Save</button></div>
+        <br>
+        
+        <div class=" grid-cell border border-dark w-3 p-3 h-25 " id = "fivePm" style="display: flex; justify-content: space-between;"><span>5PM</span><input type="text" id="currentTaskFive"><button id="save5">Save</button></div>
+      </div>
+      </div>
+     
+    
+    </div>
+    <!-- load javascript files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

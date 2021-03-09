@@ -79,6 +79,16 @@ textarea{
   float:inline-end;
 }
 .jumbotron {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+input {
+
+  width: 75%;
+
+}
+button {
+  background-color: #000000;
+  color:#ffffff;
+  
 }
