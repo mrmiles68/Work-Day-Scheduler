@@ -11,7 +11,7 @@ var saveTwo ="";
 var saveThree ="";
 var saveFour ="";
 var saveFive ="";
-var hardSaveNine =  "";
+var hardSaveNine = localStorage.getItem(hardSaveNine);
 var hardSaveTen =  "";
 var hardSaveEleven =  "";
 var hardSaveTwelve =  "";
@@ -20,18 +20,25 @@ var hardSaveTwo =  "";
 var hardSaveThree =  "";
 var hardSaveFour =  "";
 var hardSaveFive =  "";
+var task9 = localStorage.getItem(hardSaveNine);
 
 var dataSave = function(){
     console.log("button 9 clicked");
 };
+document.getElementById("currentTaskNine").innerHTML = "Current Task: " + task9;
+console.log("original task " + task9);
+
 
 // $(document).ready(function() {
 $( "#save9" ).click(function() {
-        var saveNine = $("#nineTask").val();
+        var saveNine = $(".nineTask").val();
         alert(" New Variable: " + saveNine);
         console.log(saveNine);
-        localStorage.hardSaveNine = saveNine;
-        alert(" Saved Variable: " + hardSaveNine);
+        localStorage.setItem(hardSaveNine, saveNine);
+        alert(localStorage.getItem(hardSaveNine));
+        task9 = localStorage.getItem(hardSaveNine)
+        console.log("current task: " +task9)
+        document.getElementById("currentTaskNine").innerHTML = "Current Task: " + task9;
   });
 // });
    $( "#save10" ).click(function() {
