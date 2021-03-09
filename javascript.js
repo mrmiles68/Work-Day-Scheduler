@@ -17,24 +17,24 @@ var saveTwo =" ";
 var saveThree =" ";
 var saveFour =" ";
 var saveFive =" ";
-var hardSaveNine = localStorage.getItem(hardSaveNine);
-var hardSaveTen = localStorage.getItem(hardSaveTen);
-var hardSaveEleven = localStorage.getItem(hardSaveEleven);
-var hardSaveTwelve = localStorage.getItem(hardSaveTwelve);
-var hardSaveOne =  localStorage.getItem(hardSaveOne);
-var hardSaveTwo =  localStorage.getItem(hardSaveTwo);
-var hardSaveThree =  localStorage.getItem(hardSaveThree);
-var hardSaveFour =  localStorage.getItem(hardSaveFour);
-var hardSaveFive =  localStorage.getItem(hardSaveFive);
-var task9 = localStorage.getItem(hardSaveNine);
-var task10 = localStorage.getItem(hardSaveTen);
-var task11 = localStorage.getItem(hardSaveEleven);
-var task12 = localStorage.getItem(hardSaveTwelve);
-var task1 = localStorage.getItem(hardSaveOne);
-var task2 = localStorage.getItem(hardSaveTwo);
-var task3 = localStorage.getItem(hardSaveThree);
-var task4 = localStorage.getItem(hardSaveFour);
-var task5 = localStorage.getItem(hardSaveFive);
+var hardSaveNine = localStorage.getItem("hardSaveNine");
+var hardSaveTen = localStorage.getItem("hardSaveTen");
+var hardSaveEleven = localStorage.getItem("hardSaveEleven");
+var hardSaveTwelve = localStorage.getItem("hardSaveTwelve");
+var hardSaveOne =  localStorage.getItem("hardSaveOne");
+var hardSaveTwo =  localStorage.getItem("hardSaveTwo");
+var hardSaveThree =  localStorage.getItem("hardSaveThree");
+var hardSaveFour =  localStorage.getItem("hardSaveFour");
+var hardSaveFive =  localStorage.getItem("hardSaveFive");
+var task9 = localStorage.getItem("hardSaveNine");
+var task10 = localStorage.getItem("hardSaveTen");
+var task11 = localStorage.getItem("hardSaveEleven");
+var task12 = localStorage.getItem("hardSaveTwelve");
+var task1 = localStorage.getItem("hardSaveOne");
+var task2 = localStorage.getItem("hardSaveTwo");
+var task3 = localStorage.getItem("hardSaveThree");
+var task4 = localStorage.getItem("hardSaveFour");
+var task5 = localStorage.getItem("hardSaveFive");
 
 
 //  Display Previous user data
@@ -54,8 +54,8 @@ console.log("original task " + task9);
 $( "#save9" ).click(function() {
         var saveNine = $("#currentTaskNine").val();
         console.log(saveNine);
-        localStorage.setItem(hardSaveNine, saveNine);
-        task9 = localStorage.getItem(hardSaveNine)
+        localStorage.setItem("hardSaveNine", saveNine);
+        task9 = localStorage.getItem("hardSaveNine")
         console.log("current task: " +task9)
         document.getElementById("currentTaskNine").innerHTML = "Current Task: " + task9;
   });
@@ -63,64 +63,64 @@ $( "#save9" ).click(function() {
   $( "#save10" ).click(function() {
     var saveTen = $("#currentTaskTen").val();
     console.log(saveTen);
-    localStorage.setItem(hardSaveTen, saveTen);
-    task10 = localStorage.getItem(hardSaveTen);
+    localStorage.setItem("hardSaveTen", saveTen);
+    task10 = localStorage.getItem("hardSaveTen");
     console.log("current task: " +task10)
     document.getElementById("currentTaskTen").innerHTML = "Current Task: " + task10;
 });
 $( "#save11" ).click(function() {
   var saveEleven = $("#currentTaskEleven").val();
   console.log(saveEleven);
-  localStorage.setItem(hardSaveEleven, saveEleven);
-  task11 = localStorage.getItem(hardSaveEleven)
+  localStorage.setItem("hardSaveEleven", saveEleven);
+  task11 = localStorage.getItem("hardSaveEleven")
   console.log("current task: " +task11)
   document.getElementById("currentTaskEleven").innerHTML = "Current Task: " + task11;
 });
 $( "#save12" ).click(function() {
   var saveTwelve = $("#currentTaskTwelve").val();
   console.log(saveTwelve);
-  localStorage.setItem(hardSaveTwelve, saveTwelve);
-  task11 = localStorage.getItem(hardSaveTwelve)
+  localStorage.setItem("hardSaveTwelve", saveTwelve);
+  task12 = localStorage.getItem("hardSaveTwelve")
   console.log("current task: " +task12)
   document.getElementById("currentTaskTwelve").innerHTML = "Current Task: " + task12;
 });
 $( "#save1" ).click(function() {
   var saveOne = $("#currentTaskOne").val();
   console.log(saveOne);
-  localStorage.setItem(hardSaveOne, saveOne);
-  task1 = localStorage.getItem(hardSaveOne)
+  localStorage.setItem("hardSaveOne", saveOne);
+  task1 = localStorage.getItem("hardSaveOne")
   console.log("current task: " +task1)
   document.getElementById("currentTaskOne").innerHTML = "Current Task: " + task1;
 });
 $( "#save2" ).click(function() {
   var saveTwo = $("#currentTaskTwo").val();
   console.log(saveTwo);
-  localStorage.setItem(hardSaveTwo, saveTwo);
-  task2 = localStorage.getItem(hardSaveTwo)
+  localStorage.setItem("hardSaveTwo", saveTwo);
+  task2 = localStorage.getItem("hardSaveTwo")
   console.log("current task: " +task2)
   document.getElementById("currentTaskTwo").innerHTML = "Current Task: " + task2;
 });
 $( "#save3" ).click(function() {
   var saveThree = $("#currentTaskThree").val();
   console.log(saveThree);
-  localStorage.setItem(hardSaveThree, saveThree);
-  task3 = localStorage.getItem(hardSaveThree)
+  localStorage.setItem("hardSaveThree", saveThree);
+  task3 = localStorage.getItem("hardSaveThree")
   console.log("current task: " +task3)
   document.getElementById("currentTaskThree").innerHTML = "Current Task: " + task3;
 });
 $( "#save4" ).click(function() {
   var saveFour = $("#currentTaskFour").val();
   console.log(saveFour);
-  localStorage.setItem(hardSaveFour, saveFour);
-  task4 = localStorage.getItem(hardSaveFour)
+  localStorage.setItem("hardSaveFour", saveFour);
+  task4 = localStorage.getItem("hardSaveFour")
   console.log("current task: " +task4)
   document.getElementById("currentTaskFour").innerHTML = "Current Task: " + task4;
 });
 $( "#save5" ).click(function() {
   var saveFive = $("#currentTaskFive").val();
   console.log(saveFive);
-  localStorage.setItem(hardSaveFive, saveFive);
-  task5 = localStorage.getItem(hardSaveFive)
+  localStorage.setItem("hardSaveFive", saveFive);
+  task5 = localStorage.getItem("hardSaveFive")
   console.log("current task: " +task5)
   document.getElementById("currentTaskFive").innerHTML = "Current Task: " + task5;
 });
